@@ -1,0 +1,11 @@
+2024-08-15 18:10:08 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.client_person_service.controllers.ClienteControllerTest]: ClienteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-08-15 18:10:08 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.client_person_service.ClientPersonServiceApplication for test class com.client_person_service.controllers.ClienteControllerTest
+2024-08-15 18:10:08 INFO  c.c.c.ClienteControllerTest - Starting ClienteControllerTest using Java 17 with PID 53804 (started by FABY_ in C:\Users\FABY_\IdeaProjects\microservices-challenge-back-ff\client-person-service)
+2024-08-15 18:10:08 DEBUG c.c.c.ClienteControllerTest - Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-15 18:10:08 INFO  c.c.c.ClienteControllerTest - No active profile set, falling back to 1 default profile: "default"
+2024-08-15 18:10:11 INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-08-15 18:10:11 INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-08-15 18:10:11 INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-08-15 18:10:11 INFO  c.c.c.ClienteControllerTest - Started ClienteControllerTest in 3.009 seconds (process running for 4.302)
+2024-08-15 22:21:37 INFO  c.c.services.ClienteServiceImpl - Creando nuevo cliente con ID: 1
+2024-08-15 22:25:49 INFO  c.c.services.ClienteServiceImpl - Creando nuevo cliente con ID: 1

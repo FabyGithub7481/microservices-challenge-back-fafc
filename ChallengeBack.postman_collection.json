@@ -1,0 +1,520 @@
+{
+	"info": {
+		"_postman_id": "86065756-af32-473d-beea-12784eeeb04e",
+		"name": "ChallengeBack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32428415"
+	},
+	"item": [
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "CrearCuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"numeroCuenta\": \"20004789647\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": 52.0,\r\n  \"estado\": true\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/cuentas?identificacion=1718179985",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"cuentas"
+							],
+							"query": [
+								{
+									"key": "identificacion",
+									"value": "1718179985"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarCuentas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarCuentaPorId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/cuentas/1723686805492",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"cuentas",
+								"1723686805492"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarCuentaPorId",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": \"20004789647\",\r\n    \"tipoCuenta\": \"Corriente\",\r\n    \"saldoInicial\": 52.00,\r\n    \"estado\": true,\r\n    \"clienteId\": 1723686805492\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/cuentas/20004789647",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"cuentas",
+								"20004789647"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCuentaPorId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identificacion\": \"1718179982\",\r\n  \"numeroCuenta\": \"12345\",\r\n  \"tipoCuenta\": \"Ahorros\",\r\n  \"saldoInicial\": 50.0,\r\n  \"estado\": true\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/cuentas/20004789647",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"cuentas",
+								"20004789647"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "CrearCliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"contrasena\": \"7777\",\r\n  \"estado\": true,\r\n  \"nombre\": \"MArcelo Pedro Perez Martinez\",\r\n  \"genero\": \"Masculino\",\r\n  \"edad\": 25,\r\n  \"identificacion\": \"1718179914\",\r\n  \"direccion\": \"13 junio y pasaje 1/2 kilometro\",\r\n  \"telefono\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puertoClientes}}/api/clientes",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puertoClientes}}",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarClientePorId",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \r\n        \"nombre\": \"Pedro Dao\",\r\n        \"genero\": \"Masculino\",\r\n        \"edad\": 25,\r\n        \"identificacion\": \"1718179989\",\r\n        \"direccion\": \"13 junio y pasaje 1/2 kilometro frente a la farmacia\",\r\n        \"telefono\": \"098874577\",\r\n        \"contrasena\": \"8965\",\r\n        \"estado\": true\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puertoClientes}}/api/clientes/36",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puertoClientes}}",
+							"path": [
+								"api",
+								"clientes",
+								"36"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarTodosClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{servidor}}:{{puertoClientes}}/api/clientes",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puertoClientes}}",
+							"path": [
+								"api",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarCliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{servidor}}:{{puertoClientes}}/api/clientes/18",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puertoClientes}}",
+							"path": [
+								"api",
+								"clientes",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarClienteId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{servidor}}:{{puertoClientes}}/api/clientes/3",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puertoClientes}}",
+							"path": [
+								"api",
+								"clientes",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarClienteIdentificacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{servidor}}:{{puertoClientes}}/api/clientes/cuenta/1718179914",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puertoClientes}}",
+							"path": [
+								"api",
+								"clientes",
+								"cuenta",
+								"1718179914"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "CrearMovimientos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"tipoMovimiento\": \"DEPOSITO\",\r\n  \"valor\": 50.00,\r\n  \"cuenta\": {\r\n    \"numeroCuenta\": \"20004789647\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/movimientos",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarMovimientosPorId",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"fecha\": \"2024-08-15T00:12:21.280368\",\r\n        \"tipoMovimiento\": \"DEPOSITO\",\r\n        \"valor\": 500.00,\r\n        \"saldo\": 4350.00,\r\n        \"cuenta\": {\r\n            \"cuentaId\": 6,\r\n            \"numeroCuenta\": \"20004789631\",\r\n            \"tipoCuenta\": \"Ahorros\",\r\n            \"saldoInicial\": 4350.00,\r\n            \"estado\": true,\r\n            \"clienteId\": 1723686805492\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/movimientos/31",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"movimientos",
+								"31"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarMovimientosPorId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"tipoMovimiento\": \"RETIRO\",\r\n  \"valor\": 1.0,\r\n  \"cuenta\": {\r\n    \"numeroCuenta\": \"495878\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/movimientos/36",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"movimientos",
+								"36"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarMovimientoPorId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"tipoMovimiento\": \"RETIRO\",\r\n  \"valor\": 1.0,\r\n  \"cuenta\": {\r\n    \"numeroCuenta\": \"495878\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/movimientos/35",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"movimientos",
+								"35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarTodosMovimientos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n  \"tipoMovimiento\": \"RETIRO\",\r\n  \"valor\": 1.0,\r\n  \"cuenta\": {\r\n    \"numeroCuenta\": \"495878\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/api/movimientos",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"api",
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reportes",
+			"item": [
+				{
+					"name": "ReporteEstadoCuenta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{servidor}}:{{puerto}}/reportes?clienteId=1723686805492&fechaInicio=2024-01-01&fechaFin=2024-12-31",
+							"protocol": "http",
+							"host": [
+								"{{servidor}}"
+							],
+							"port": "{{puerto}}",
+							"path": [
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "clienteId",
+									"value": "1723686805492"
+								},
+								{
+									"key": "fechaInicio",
+									"value": "2024-01-01"
+								},
+								{
+									"key": "fechaFin",
+									"value": "2024-12-31"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

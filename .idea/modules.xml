@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/account-transactions-service/account-transactions-service.iml" filepath="$PROJECT_DIR$/account-transactions-service/account-transactions-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client-person-service/client-person-service.iml" filepath="$PROJECT_DIR$/client-person-service/client-person-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/microservices-challenge-back-ff.iml" filepath="$PROJECT_DIR$/.idea/microservices-challenge-back-ff.iml" />
+    </modules>
+  </component>
+</project>
